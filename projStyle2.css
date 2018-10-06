@@ -1,0 +1,41 @@
+div.header{
+	height:20%; 
+	width:100%;
+	background-color:red;
+	color:white;
+	font-family:calibri;
+	font-size:50px;
+	font-style:italic;
+	text-align:center;
+}
+div.menu{
+	height:60%;
+	width:20%;
+	background-color:cyan;
+	color:white;
+	text-align:center;
+	padding:10 10 10 10px;
+	float:left;
+}
+div img{
+	padding:10 10 10 10px;
+	
+	width:100px;
+	height:100px;
+}
+div.content{
+	width:75%;
+	height:60%;
+	padding:10 10 10 10px;
+	float:left;
+}
+div.foot{
+	width:100%;
+	height:20%;
+	background-color:grey;
+	float:left;
+	text-align:right;
+	color:white;
+	text-align:bottom;
+	
+}

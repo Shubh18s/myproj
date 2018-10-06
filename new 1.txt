@@ -1,0 +1,108 @@
+<%for(int i=1;i<=10;i++){
+	a=Integer.parseInt(request.getParameter("enternum");
+	b=a*i;
+	out.println(a +" * "+i+ " = "+b}%>
+	
+	
+	
+	<input type="hidden" value="true"/>
+	
+	
+	
+	if(a.equalsIgnoreCase("shubh186")){
+			if(b.equalsIgnoreCase("sbk413")){
+				resp.sendRedirect("userhome.jsp");
+			}
+			else{
+				
+				out.println("<a href=mainpro.jsp>Back</a>");
+			}
+		}
+		
+		
+		<!--z.concat("Username not available, Login First");-->
+		<!--z.concat("Invalid Username/Password");-->
+		
+		
+		
+		
+		
+	obj.onreadystatechange=function(){
+		if(obj.readyState==4&&obj.status==200){
+			var bool=obj.responseText;
+			alert(bool);
+			if(bool==1)
+			document.getElementById("checkusr").innerHTML="Username taken";
+			
+		}
+	};
+	obj.open("GET", url, true);
+	obj.send();	
+	
+	
+	
+	
+	var Friends=["Rock", "Spock", "Ginger", "Fred"];
+				var list=document.createElement('ul');
+				
+				for(var i=0;i<Friends.length;i++){
+					var item=document.createElement('li');
+					item.appendChild(document.createTextNode(array[i]));
+					list.appendChild(item);
+				}
+				document.getElementById("list").appendChild(list);
+				
+				
+				
+				
+<div class="content">
+		<br />         <%- this file is replaced by contentt.jsp-%>
+		<img src="scene.jpg" alt="Scene" height="200px" width="400px" />
+			<br />WELCOME<br /><br />
+			
+			<h4><ul id="list" align="left" style="float:left"></ul></h4><ul id="bul" align="left" style="list-style:none; float:left;"></ul>
+			
+</div>
+				
+				
+				
+				
+			function loadFriends(){
+			var obj=new XMLHttpRequest();
+			var url="FriendsAvailable.jsp";
+			
+			var Friends=[];var ava=[];
+			
+			obj.onreadystatechange=function(){
+			if(obj.readyState==4&&obj.status==200){
+				var resp=obj.responseText;
+				var ct=resp.split("#");
+				Friends = ct[0].split("/");
+				ava = ct[1].split(",");
+				//alert(ct[0]);
+				//Friends=new Array(ct[0].split("/"));
+				//ava=new Array(ct[1].split(","));
+			for(i=0;i<4;i++){
+					var newListItem=document.createElement("Li");
+					var itemValue=document.createTextNode(Friends[i]);
+					newListItem.appendChild(itemValue);
+					document.getElementById("list").appendChild(newListItem);
+					
+					var newListItem1=document.createElement("Li");
+					var _img=document.createElement("img");
+					
+					if(ava[i]==1)
+						_img.src="avail.png";
+					else
+						_img.src="notavail.png";
+					newListItem1.appendChild(_img);
+					document.getElementById("bul").appendChild(newListItem1);
+				}
+				
+				}
+		};
+		obj.open("GET", url, true);
+		obj.send();			
+			
+			
+			}

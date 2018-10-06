@@ -1,0 +1,38 @@
+<web-app>
+
+<servlet>
+	<servlet-name>myserv</servlet-name>
+	<servlet-class>com.controller.myserv</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>myserv</servlet-name>
+	<url-pattern>/summer</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>sumo</servlet-name>
+	<servlet-class>com.controller.sumo</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>sumo</servlet-name>
+	<url-pattern>/sumonum</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>check</servlet-name>
+	<servlet-class>com.controller.check</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>check</servlet-name>
+	<url-pattern>/check</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>gentable</servlet-name>
+	<servlet-class>com.controller.gentable</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>gentable</servlet-name>
+	<url-pattern>/gentable</url-pattern>
+</servlet-mapping>
+</web-app>

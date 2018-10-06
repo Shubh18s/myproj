@@ -1,0 +1,20 @@
+.header{
+				height:200px;
+				width:800px;
+				background-color:red;}
+			.menu{
+			height:500px;
+			width:200px;
+			background-color:yellow;
+			float:left;
+			color:green;}
+			.content{
+			height:500px;
+			width:600px;
+			background-color:cyan;
+			float:left;}
+			.footer{
+			height:100px;
+			width:800px;
+			background-color:black;
+			float:left;}
